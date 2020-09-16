@@ -8,6 +8,8 @@
 
 ###Let's find out how much do you know about the beautiful game.
 
+##Each question you answer correctly will earn you a GOAL!!!
+
 ###Kick the ball to start 
 1. the start button will be a pixelated (pix) soccer ball 
 2. the curson will be a pix soccer shoe
@@ -55,10 +57,9 @@
 
 ##Results Page
 
-###*insert_country_emoji* Time's Up! Game Over ⏱
+###*insert_whistle_emoji* Time's Up! Game Over ⏱
 
-###Let's see how you did:
-####Display correct answers out of total # of questions
+###You scored (correct answers) out of 5 possible!
 
 ###No matter how you did... You're still a champion to us 🎉🏆✨
 
