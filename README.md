@@ -1,5 +1,7 @@
 #Boilerplate app structure for Quiz App project
 
+##The Whole app will use some form of "consolas"
+
 ##Start Page
 
 ###⚽ Soccer Challenge ⚽
