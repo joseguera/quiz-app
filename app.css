@@ -68,11 +68,20 @@ label {
   font-size: 16px;
 }
 
-input .soccer-ball-button {
-  width: 500px; 
-  height: 50px;
+input:last-child {
+  width: 80px; 
+  height: 90px;
   padding-top: 10px;
 }
+
+input:last-child:hover {
+  width: 100px; 
+  height: 110px;
+  cursor: url('https://ucla.box.com/shared/static/qe7n0suqmg0i0ammjne3zv9peprq6p4a.png'), auto;	
+}
+
+
+
 
 
 
