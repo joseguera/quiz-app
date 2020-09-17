@@ -6,3 +6,74 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
+
+* {
+  box-sizing: border-box;
+  font-family: Consolas, 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: darkgreen;
+}
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+  padding: 20px 0;
+
+}
+
+main {
+  margin: 0 auto;
+  display: inline-block;
+  width: 600px;
+  height: 450px;
+  flex: align-self;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin: 0 auto;
+  display: inline-block;
+  background-color: #059142;
+  color: #ffffff;
+  width: 570px;
+  height: 420px;
+  text-align: center;
+}
+
+form .score-result {
+  margin: 0 auto;
+  text-align: right;
+  padding-top: 15px;
+  padding-right: 25px;
+  font-size: 20px;
+}
+
+form p .score-box {
+  color: blue;
+}
+
+.question {
+  font-size: 36px;
+}
+
+input /*radio button*/ {
+
+}
+label {
+  font-size: 16px;
+}
+
+input .soccer-ball-button {
+  width: 500px; 
+  height: 50px;
+  padding-top: 10px;
+}
+
+
+
+

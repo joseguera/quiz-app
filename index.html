@@ -13,9 +13,22 @@
 
 <body>
   <header>
-    <h1>The name of your quiz</h1>
+    <h1>⚽ The World Cup Quiz ⚽</h1>
   </header>
-  <main></main>
+  <main>
+    <form action="/action_page.php">
+      <p class='score-result js-score-tracker'>Score: <span class="score-box">0</span> of 10</p>
+	    <h2 class='question'>Question 1</h2>
+        <input type="radio" id="option-1" name="contact" value="email">
+        <label for="option-1">Option 1</label><br><br>
+        <input type="radio" id="option-2" name="contact" value="email">
+        <label for="option-2">Option 2</label><br><br>
+        <input type="radio" id="option-3" name="contact" value="email">
+        <label for="option-3">Option 3</label><br><br>
+        <input type="radio" id="option-4" name="contact" value="email">
+        <label for="option-4">Option 4</label><br><br>
+        <input class="soccer-ball-button" type="image" src="/images/button-soccer-ball.png" alt="submit question">
+  </main>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
   <script src="app.js"></script>
 </body>
