@@ -55,6 +55,12 @@
 3. Maradona
 4. Ronaldo
 
+##Question 6
+##Question 7
+##Question 8
+##Question 9
+##Question 10
+
 ##Results Page
 
 ###*insert_whistle_emoji* Time's Up! Game Over ⏱
