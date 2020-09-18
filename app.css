@@ -9,77 +9,202 @@
 
 * {
   box-sizing: border-box;
-  font-family: Consolas, 'Courier New', Courier, monospace;
 }
 
 body {
-  background-color: darkgreen;
-}
-
-h1 {
+  background-image: url("/images/soccer-crowd-stadium.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
   text-align: center;
-  font-size: 42px;
-  padding: 20px 0;
-
+  font-family: Consolas, Tahoma, sans-serif;
+  font-size: 16px;
 }
 
 main {
-  margin: 0 auto;
-  display: inline-block;
-  width: 600px;
-  height: 450px;
-  flex: align-self;
-  background-color: #ffffff;
+ height: 600px;
+ margin-top: 50;
+ margin-bottom: 50;
+ background:rgba(255, 255, 255, 0.8);
+ margin-left: 40px;
+ margin-right: 40px;
+ margin-top:50px;
+ margin-bottom: 50px;
+ border-radius: 3px; 
+}
+
+.form {
+  border: 2px solid black;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  /* height: 400px; */
+  text-align: center;
+}
+
+.intro {
+  height: 430px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 30px;
+  border: 2px solid black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-form {
-  margin: 0 auto;
-  display: inline-block;
-  background-color: #059142;
-  color: #ffffff;
-  width: 570px;
-  height: 420px;
-  text-align: center;
+.result {
+display: inline-block;
+margin-top: 0px;
+margin-bottom: 20px;
+margin-left: 20px;
+margin-right: 20px;
+padding-top: px;
+padding-bottom: 10px;
+/* height: 400px; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
-form .score-result {
-  margin: 0 auto;
-  text-align: right;
-  padding-top: 15px;
-  padding-right: 25px;
-  font-size: 20px;
+.black-text {
+  color: black;
 }
 
-form p .score-box {
-  color: blue;
+legend {
+  font-size: 30px;
+  margin-top: 60px;
+  margin-bottom: 10px;
 }
 
-.question {
-  font-size: 36px;
-}
-
-input /*radio button*/ {
-
-}
-label {
-  font-size: 16px;
-}
-
-input:last-child {
-  width: 80px; 
-  height: 90px;
+button {
+  position: relative;
+  top: 10px;
+  width: 150px;
+  height: 35px;
+  background-color: rgb(4, 90, 4);
+  border-color: black;
+  border-radius: 3px;
+  font-size: 18px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding-top: 10px;
+  padding-bottom: 30px;
+  cursor: pointer;
 }
 
-input:last-child:hover {
-  width: 100px; 
-  height: 110px;
-  cursor: url('https://ucla.box.com/shared/static/qe7n0suqmg0i0ammjne3zv9peprq6p4a.png'), auto;	
+#start {
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
+.nextButton {
+  margin-top: 20px;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+h1 {
+  padding-top: 30px;
+}
+
+h2 { 
+  margin-top: 50px;
+}
+
+p {
+  font-size: 19px;
+  color: rgb(4, 90, 4); 
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  list-style-position: inside;
+  line-height: 35px;
+  font-size: 17px;
+  display: inline-block;
+  text-align: justify;
+  height: 40px;;
+  padding: 0;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+  border: solid white 2px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.goal {
+  width: 100px;
+  height: 90px;
+  filter: contrast(1.60);
+}
+
+.ball {
+  width: 190px;
+  height: 150px;
+}
+
+section {
+ text-align: center;
+}
+
+label {
+  cursor: pointer;
+}
+
+input {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) {
+  body{
+  background-size: 100% 110%;
+  }
+
+  legend {
+    font-size: 20px;
+  }
+
+  img {
+    width: 180px;
+    height: 140px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  legend {
+    font-size: 25px;
+  }
+
+  img {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 568px) {
+  legend {
+    font-size: 30px;
+  }
+
+  img {
+  width: 300px;
+  height: 200px;
+  }
+}
 
 
 
