@@ -1,12 +1,33 @@
 'use strict';
-
 //////////////////////////////////////////////////
 ///////// Define Global Variables ////////////////
 //////////////////////////////////////////////////
 
+{/* <header>
+      <h1>⚽ The World Cup Quiz ⚽</h1>
+      <div class="questionAndScore"></div>
+    </header>
+
+
+      <section class="intro js-intro">
+          <h2>How much do you know about the World Cup?</h2>
+          <p class="black-text">Hit us with your best shot!</p>
+          <img src="https://i.imgur.com/71LtaV1.gif" alt="shaloin monks playing soccer" class="goal"> 
+          <button type="submit" id="start"class="start">Start</button>
+      </section>
+
+      <section class="questions">
+      </section> 
+
+      <section class="feedback">
+      </section>
+
+      <section class="result">
+      </section> */}
+
 const store = {
   slides: [{
-    message: '⚽ The World Cup Quiz ⚽',
+    message: 'Start Quiz',
     buttonText: ['Start'],
     answer: '',
     feedback: [],
@@ -125,15 +146,11 @@ const store = {
   numRight: 0,
 };
 
-//////////////////////////////////////////////////
-///////// Template Generation Functions //////////
-//////////////////////////////////////////////////
-
 // function that returns html based on a switch case
 function startTemplate(selection) {
   return `
 <form id="js-form">
-  <h1 class="js-form-title">${selection.message}</h2>
+  <h2 class="js-form-title">${selection.message}</h2>
   <button class="submit start" type="submit">${selection.buttonText[0]}</button>
   <p class="hide"></p>
 </form>
@@ -176,11 +193,6 @@ function finishedTemplate(selection) {
 </form>
 `;
 }
-
-//////////////////////////////////////////////////
-///////// Render Functions ///////////////////////
-//////////////////////////////////////////////////
-
 function createTemplate(selection) {
   switch (selection.state) {
   case 'start':
@@ -231,10 +243,7 @@ function render() {
   $('main').html(template);
 }
 
-//////////////////////////////////////////////////
-///////// Event Handler Functions ////////////////
-//////////////////////////////////////////////////
-
+// Event 
 // Start Quiz
 function startQuiz() {
   $('main').on('click', '.start', event => {
