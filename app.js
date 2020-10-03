@@ -14,8 +14,8 @@ const store = {
   },
   {
     message: '1. 🥇 How often is the World Cup played? 🏆',
-    imgSrc: 'img/covering-eyes.jpg',
-    imgAlt: 'Otter with it\'s hands over it\'s eyes.',
+    imgSrc: 'images/fifa-country-code-explained.jpg',
+    imgAlt: 'two players battling for the ball',
     options: ['Every year', 'Every two years', 'Every three years', 'Every four years'],
     answer: 'Every four years',
     buttonText: ['Submit Answer', 'Next Question'],
@@ -24,8 +24,8 @@ const store = {
   },
   {
     message: '2. Where was the first World Cup held?',
-    imgSrc: 'img/holding-hands.jpg',
-    imgAlt: 'Two otters holding hands.',
+    imgSrc: 'images/Uruguay_goal_v_argentina_1930.jpg',
+    imgAlt: 'player scoring goal - black and white',
     options: ['Mexico', 'France', 'Uruguay', 'England'],
     answer: 'Uruguay',
     buttonText: ['Submit Answer', 'Next Question'],
@@ -34,8 +34,8 @@ const store = {
   },
   {
     message: '3. Which country is the winningest in World Cup history?',
-    imgSrc: 'img/hands-together.jpg',
-    imgAlt: 'Otter with it\'s hands together.',
+    imgSrc: 'images/maradona_1994.jpg',
+    imgAlt: 'player celebrates goal',
     options: ['Germany', 'Brazil', 'Netherlands', 'Japan'],
     answer: 'Brazil',
     buttonText: ['Submit Answer', 'Next Question'],
@@ -44,8 +44,8 @@ const store = {
   },
   {
     message: '4. Qualifying to the Grand Feast (i.e., the World Cup) is very difficult. That said, which country has made an apperance at every single Cup since its inception in 1930?',
-    imgSrc: 'img/holding-head.jpg',
-    imgAlt: 'Otter holding it\'s head.',
+    imgSrc: 'images/high_kick.jpg',
+    imgAlt: 'player kicking high',
     options: ['USA', 'Italy', 'Mexico', 'Brazil'],
     answer: 'Brazil',
     buttonText: ['Submit Answer', 'Next Question'],
@@ -54,8 +54,8 @@ const store = {
   },
   {
     message: '5. Who\'s the highest scoring player in World Cup history?',
-    imgSrc: 'img/hands-out.jpg',
-    imgAlt: 'Otter holding it\'s hands out.',
+    imgSrc: 'images/world-cup-1938.jpg',
+    imgAlt: 'player trying to beat his mark - black and white',
     options: ['Pele', 'Maradona', 'Miroslav Klose', 'Lionel Messi'],
     answer: 'Miroslav Klose',
     buttonText: ['Submit Answer', 'Next Question'],
@@ -64,8 +64,8 @@ const store = {
   },
   {
     message: '6. Which player used his hand (not allowed) to score the infamous "Hand of God" goal in 1986?',
-    imgSrc: 'img/hands-out.jpg',
-    imgAlt: 'Otter holding it\'s hands out.',
+    imgSrc: 'images/200px-France_vs_hungary_kimberley.jpg',
+    imgAlt: 'player passing the ball to teammate',
     options: ['Pele', 'Lionel Messi', 'Maradona', 'Cristiano Ronaldo'],
     answer: 'Maradona',
     buttonText: ['Submit Answer', 'Next Question'],
@@ -74,8 +74,8 @@ const store = {
   },
   {
     message: '7. The World Cup has been held every four years since its inception in 1930, except during which years?',
-    imgSrc: 'img/hands-out.jpg',
-    imgAlt: 'Otter holding it\'s hands out.',
+    imgSrc: 'images/world_cup_1950.jpg',
+    imgAlt: 'players lined up for their country\'s national anthem',
     options: ['1942 and 1946', '1934 and 1938', '1998 and 2002', '1950 and 1954'],
     answer: '1942 and 1946',
     buttonText: ['Submit Answer', 'Next Question'],
@@ -84,8 +84,8 @@ const store = {
   },
   {
     message: '8. What modern technology was added to improve accuracy and equitability in the game?',
-    imgSrc: 'img/hands-out.jpg',
-    imgAlt: 'Otter holding it\'s hands out.',
+    imgSrc: 'images/world_cup_1998.jpg',
+    imgAlt: 'player scoring header goal',
     options: ['Electronic performance and Tracking Systems (EPTS) used to control and improve player and team performance', 'Goal-line technology (GLT) to determine if a goal has been scored or not', 'Video assistant referee (VAR)', 'All of the above'],
     answer: 'All of the above',
     buttonText: ['Submit Answer', 'Next Question'],
@@ -93,9 +93,9 @@ const store = {
     state: 'question'
   },
   {
-    message: '9. Which of the following uniforms do you think belongs to the Italian National team?',
-    imgSrc: 'img/hands-out.jpg',
-    imgAlt: 'Otter holding it\'s hands out.',
+    message: '9. Which of the following uniform colors do you think belongs to the Italian National team?',
+    imgSrc: 'images/2014-World-Cup-Uniform-Preview.jpg',
+    imgAlt: '2014 world cup uniforms',
     options: ['Green shirt, white shorts, red socks', 'White shirt, white shorts, white socks with green and red highlights', 'Red shirt, white shorts, green socks', 'None of the above'],
     answer: 'None of the above',
     buttonText: ['Submit Answer', 'Next Question'],
@@ -104,8 +104,8 @@ const store = {
   },
   {
     message: '10. What are the ages of the oldest and youngest players to ever play in a World Cup?. Who\'s the highest scoring player in World Cup history?',
-    imgSrc: 'img/hands-out.jpg',
-    imgAlt: 'Otter holding it\'s hands out.',
+    imgSrc: 'images/Roger-Milla-Cameroon.jpg',
+    imgAlt: 'cameroon player holding up hands',
     options: ['43 and 17', '45 and 19', '39 and 16', 'None of the above'],
     answer: '43 and 17',
     buttonText: ['Submit Answer', 'Next Question'],
@@ -133,7 +133,8 @@ const store = {
 function startTemplate(selection) {
   return `
 <form id="js-form">
-  <h1 class="js-form-title">${selection.message}</h2>
+  <h1 class="js-form-title">${selection.message}</h2><br>
+    <img src="images/WorldCupImage.jpg" alt="world cup trophy in stadium"><br>
   <button class="submit start" type="submit">${selection.buttonText[0]}</button>
   <p class="hide"></p>
 </form>
@@ -163,7 +164,7 @@ function questionTemplate(selection) {
     </div>
   </div>
   <button class="submit feedback" type="submit">${selection.buttonText[0]}</button>
-  <p class = "hide"></p>
+  <p class="hide"></p>
 </form>
 `;
 }
@@ -172,7 +173,7 @@ function finishedTemplate(selection) {
 <form id="js-form">
   <h2 class="js-form-title">${selection.message}</h2>
   <button class="submit restart" type="submit">${selection.buttonText[0]}</button>
-  <p class='finished-feedback'>You've answered ${store.numRight} correct out of 5</p>
+  <p class="correct">You've answered ${store.numRight} correct out of 10</p>
 </form>
 `;
 }
