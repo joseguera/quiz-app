@@ -4,6 +4,7 @@
 ///////// Define Global Variables ////////////////
 //////////////////////////////////////////////////
 
+// Storing Questions
 const store = {
   slides: [{
     message: '⚽ The World Cup Quiz ⚽',
